@@ -6,7 +6,7 @@
 double TrainableNeuralNetwork::loss_func() const {
     double sum = 0.0;
     for (int i = 0; i < m; i++) {
-        int numb = static_cast<int>(Y(0, i)); // Accesare corectă Eigen: rândul 0, coloana i
+        int numb = static_cast<int>(Y(0, i)); 
         sum += std::log(layers[1].A(numb, i));
     }
     return -sum / m;

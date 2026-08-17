@@ -11,7 +11,7 @@ CELL_SIZE = WIDTH // COLS
 
 pygame.init()
 win = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("SPACE to guess, C to clear")
+pygame.display.set_caption("Write a digit!")
 
 grid = np.zeros((ROWS, COLS), dtype=float)
 
